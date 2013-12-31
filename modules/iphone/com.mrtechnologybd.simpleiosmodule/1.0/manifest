@@ -1,0 +1,18 @@
+#
+# this is your module manifest and used by Titanium
+# during compilation, packaging, distribution, etc.
+#
+version: 1.0
+apiversion: 2
+description: My module
+author: Md Mostafizur Rahman
+license: Specify your license
+copyright: Copyright (c) 2013 by Your Company
+
+
+# these should not be edited
+name: SimpleIOSModule
+moduleid: com.mrtechnologybd.simpleiosmodule
+guid: a1297448-20a2-46d7-87ed-a236561db1a9
+platform: iphone
+minsdk: 3.1.3.GA

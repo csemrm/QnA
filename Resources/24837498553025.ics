@@ -1,0 +1,35 @@
+BEGIN:VCALENDAR
+PRODID:-//Microsoft Corporation//Outlook 10.0 MIMEDIR//EN
+VERSION:2.0
+METHOD:REQUEST
+BEGIN:VTIMEZONE
+TZID:West Asia Time
+BEGIN:STANDARD
+DTSTART:20111001T000000
+TZOFFSETFROM:+0600
+TZOFFSETTO:+0600
+TZNAME:Standard Time
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+ATTENDEE;CN="Md. Mostafizur Rahman";ROLE=REQ-PARTICIPANT;RSVP=TRUE:MAILTO:mrahman@appcelerator.com
+ORGANIZER;CN="webex":MAILTO:messenger@webex.com
+DTSTART;TZID="West Asia Time":20131209T170000
+DTEND;TZID="West Asia Time":20131209T180000
+RRULE:FREQ=WEEKLY;INTERVAL=1;BYDAY=MO,TU,WE,TH,FR;WKST=SU;COUNT=5
+LOCATION:https://appcelerator.webex.com/appcelerator
+TRANSP:OPAQUE
+SEQUENCE:1
+UID:WEBEX-TRAINING CENTER-7.0553025-24837498
+DTSTAMP:20131209T110000Z
+DESCRIPTION:Hello Md. Mostafizur Rahman,\n\nYou scheduled the following training session:\n\nTopic: Daily meeting: Assignment Review & Updates \nHost: Md. Mostafizur Rahman\nDate: Every weekday, from Monday, 9 December 2013 to Friday, 13 December 2013\nTime: 17:00, West Asia Time (Yekaterinburg, GMT+06:00)\nSession Number: 492 425 312\nSession Password: 1234\nHost Key: not displayed\n\n\n\n\n-------------------------------------------------------\nTo start the session\n-------------------------------------------------------\n1. Go to https://appcelerator.webex.com/appcelerator/k2/j.php?ED=24837498\n2. Log in to your account.\n3. Click "Start Now".\n4. Follow the instructions that appear on your screen.\n\n-------------------------------------------------------\nAudio conference information\n-------------------------------------------------------\nTo receive a call back, provide your phone number when you join the training session, or call the number below and enter the access code.\nCall-in toll number (US/Canada):1-650-479-3208\nGlobal call-in numbers: https://appcelerator.webex.com/appcelerator/globalcallin.php?serviceType=TC&ED=24837498&tollFree=0\nAccess code: 492 425 312\n\n-------------------------------------------------------\nFor assistance\n-------------------------------------------------------\n1. Go to https://appcelerator.webex.com/appcelerator/tc\n2. On the left navigation bar, click "Support".\n\nTo add this session to your calendar program (for example Microsoft Outlook), click this link:\nhttps://appcelerator.webex.com/appcelerator/k2/j.php?AT=down&ED=24837498&EF=SM&UUID=506875527&SHA2=tBOLZpx8deJr8t7ETvx77qHGzA%2FLXNefLDMgsxhyzD0%3D\n\nhttp://www.webex.com\n\nIMPORTANT NOTICE: This WebEx service includes a feature that allows audio and any documents and other materials exchanged or viewed during the session to be recorded. You should inform all meeting attendees prior to recording if you intend to record the meeting. Please note that any such recordings may be subject to discovery in the event of litigation.\n
+SUMMARY:Training session scheduled: Daily meeting: Assignment Review & Updates 
+PRIORITY:5
+CLASS:PUBLIC
+BEGIN:VALARM
+TRIGGER:-PT5M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,43 @@
+var win = Ti.UI.createWindow({
+	backgroundColor : 'white'
+});
+
+var listView = Ti.UI.createListView();
+var sections = [];
+
+var fruitSection = Ti.UI.createListSection({
+	headerTitle : 'Fruits'
+});
+var fruitDataSet = [{
+	properties : {
+		title : 'Apple'
+	}
+}, {
+	properties : {
+		title : 'Banana'
+	}
+}, {
+	properties : {
+		title : 'Mango'
+	}
+}, {
+	properties : {
+		title : 'Grapes'
+	}
+}];
+fruitSection.setItems(fruitDataSet);
+
+sections.push(fruitSection);
+
+listView.sections = sections;
+
+listView.addEventListener('click', function(e) {
+	alert('clicked me!');
+});
+
+listView.addEventListener('dblclick', function(e) {
+	alert('dblclicked me!');
+});
+
+win.add(listView);
+win.open(); 

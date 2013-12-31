@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+	<string name="hello1">
+		Welcome to Titanium!
+	</string>
+	<string name="welcome">
+		Welcome to my gist
+	</string>
+</resources>
