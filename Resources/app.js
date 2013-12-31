@@ -4,18 +4,18 @@ var parentView = Ti.UI.createWindow({
 
 var label = Ti.UI.createLabel({
 	textAlign : 'left',
-	width : '100dp',
-	height : '15dp',
+	width : 300,
+	height : Ti.UI.SIZE,
 	ellipsize : true,
 	top : '45dp',
 	color : 'black',
-	text : 'The quick brown fox jumped over the lazy dog. /n The quick brown fox jumped over the lazy dog again.',
-	wordWrap : false,
+	text : 'I used to be an adventurer \n like you until I took an arrow to the knee',
 	font : {
 		fontSize : '12dp',
 		fontWeight : 'normal',
 		fontFamily : 'Arial'
-	}
+	},
+	wordWrap : false,
 });
 
 parentView.add(label);
