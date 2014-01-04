@@ -24,20 +24,7 @@ var mapview = Titanium.Map.createView({
 });
 
 win.add(mapview);
-// Handle click events on any annotations on this map.
-mapview.addEventListener('click', function(evt) {
-
-    Ti.API.info("Annotation " + evt.title + " clicked, id: " + evt.annotation.myid);
-
-    alert(evt.clicksource);
-
-    // Check for all of the possible names that clicksouce
-    // can report for the left button/view.
-    if (evt.clicksource == 'leftButton' || evt.clicksource == 'leftPane' ||
-        evt.clicksource == 'leftView') {
-        Ti.API.info("Annotation " + evt.title + ", left button clicked.");
-    }
-});
+ 
 
 win.open();
  
