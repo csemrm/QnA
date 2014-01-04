@@ -1,32 +1,31 @@
-var win = Ti.UI.createWindow();
+var MapModule = require('ti.map');
 
-var mountainView = Titanium.Map.createAnnotation({
-	latitude : 37.390749,
-	longitude : -122.081651,
-	title : "Appcelerator Headquarters",
-	subtitle : 'Mountain View, CA',
-	pincolor : Titanium.Map.ANNOTATION_RED,
-	animate : true,
-	leftButton : '/images/appcelerator_small.png',
-	myid : 1, // Custom property to uniquely identify this annotation.
-	rightButton : '/images/appcelerator_small.png',
+var win = Ti.UI.createWindow({
+	backgroundColor : 'white'
 });
 
-var mapview = Titanium.Map.createView({
+var mapview = MapModule.createView({
 	mapType : Titanium.Map.STANDARD_TYPE,
 	region : {
-		latitude : 37.390749,
-		longitude : -122.081651,
-		latitudeDelta : 0.04,
-		longitudeDelta : 0.04
+		latitude : 33.74511,
+		longitude : -84.38993,
+		latitudeDelta : 0.01,
+		longitudeDelta : 0.01
 	},
 	animate : true,
 	regionFit : true,
 	userLocation : true,
-	annotations : [mountainView]
 });
 
 win.add(mapview);
- 
+
+// Listen for click events.
+mapview.addEventListener('regionchanged', function(e) {
+	alert(mapview.getRegion());
+});
+
+mapview.addEventListener('complete', function(e) {
+	alert('Complete');
+});
 
 win.open();

@@ -42,7 +42,8 @@
         </orientations>
     </iphone>
     <android xmlns:android="http://schemas.android.com/apk/res/android">
-        <manifest android:installLocation="auto">
+        <manifest android:installLocation="auto" >
+        	<uses-sdk  android:targetSdkVersion="14" />
             <!-- Allows the API to download data from Google Map servers -->
             <uses-permission android:name="android.permission.INTERNET"/>
             <!-- Allows the API to cache data -->
@@ -87,7 +88,7 @@
         <target device="mobileweb">true</target>
         <target device="tizen">false</target>
     </deployment-targets>
-    <sdk-version>3.1.3.GA</sdk-version>
+    <sdk-version>3.2.0.GA</sdk-version>
     <property name="com-soasta-touchtest-version" type="string">6872.18</property>
     <ios>
         <plist>
